@@ -9,18 +9,28 @@
 <body>
   <div class="weather-app">
     <header>
-        <form >
-<input type="search" placeholder="Enter city" required/>
-<input type="submit" value="search"/>
+        <form class="search-form">
+<input type="search" 
+placeholder="Enter city"
+ required
+ class="search-form-input"
+ />
+<input type="submit"
+ value="search"
+ class="search-input-button"
+ />
         </form>
     </header>
     <main>
-        <div>
-        <h1>Cape Town</h1>
-        <p>Tuesday 14:13,cloudy</p>
+        <div class="weather-app-data">
+            <div>
+        <h1 class="city-name">Cape Town</h1>
+        <p class="weather-details">Tuesday 14:13,cloudy
         <br>
-        Humidity: 66%,Wind: 3.1km/h
-       <div>☁️ 12°C </div>
+        Humidity: <strong> 66% </strong>,Wind: <strong>3.1km/h</strong>
+        </p>
+        </div>
+       <div class="weather-temperature"> <div class="emoji">☁️</div> <div class="temp-value"> 12</div><div class="degree">°C </div></div>
        </div>
     </main>
     <footer>
