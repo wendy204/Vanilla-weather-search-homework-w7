@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="src/styles.css">
+    
 </head>
 <body>
   <div class="weather-app">
     <header>
-        <form class="search-form">
+        <form class="search-form"id="search-form">
 <input type="search" 
 placeholder="Enter city"
  required
+ id="search-form-input"
  class="search-form-input"
  />
 <input type="submit"
@@ -24,7 +26,7 @@ placeholder="Enter city"
     <main>
         <div class="weather-app-data">
             <div>
-        <h1 class="city-name">Cape Town</h1>
+        <h1 class="city-name" id="city-name">Cape Town</h1>
         <p class="weather-details">Tuesday 14:13,cloudy
         <br>
         Humidity: <strong> 66% </strong>,Wind: <strong>3.1km/h</strong>
@@ -38,5 +40,6 @@ placeholder="Enter city"
     </footer>
     </div>
 </body>
+<script src="src/script.js"></script>
 
 </html>
