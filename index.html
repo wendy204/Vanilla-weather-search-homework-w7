@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="src/styles.css">
-    
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
 </head>
 <body>
   <div class="weather-app">
     <header>
-        <form class="search-form"id="search-form">
+        <form class="search-form" id="search-form">
 <input type="search" 
 placeholder="Enter city"
  required
@@ -27,16 +27,16 @@ placeholder="Enter city"
         <div class="weather-app-data">
             <div>
         <h1 class="city-name" id="city-name">Cape Town</h1>
-        <p class="weather-details">Tuesday 14:13,cloudy
+        <p class="weather-details" id="weather-details"><span id="time"></span>,<span id="weather-description"></span>
         <br>
-        Humidity: <strong> 66% </strong>,Wind: <strong>3.1km/h</strong>
+        Humidity: <strong id="humidity"></strong>,Wind: <strong id="wind-speed"></strong>
         </p>
         </div>
        <div class="weather-temperature"> <div class="emoji">☁️</div> <div class="temp-value"> 12</div><div class="degree">°C </div></div>
        </div>
     </main>
     <footer>
-        This project was coded by <a href="">Panashe</a> and is <a href="">open sourced on Github </a>and <a href="">hosted on Netlify</a>
+        This project was coded by <a href="https://github.com/wendy204">Panashe</a> and is <a href="https://github.com/wendy204/Vanilla-weather-search-homework-w7">open sourced on Github </a>and <a href="">hosted on Netlify</a>
     </footer>
     </div>
 </body>
